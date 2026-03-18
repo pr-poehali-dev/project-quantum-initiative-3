@@ -1,26 +1,67 @@
+const segments = [
+  { icon: "🏠", label: "Дом" },
+  { icon: "🏢", label: "Офис" },
+  { icon: "🏭", label: "Производство" },
+  { icon: "🚗", label: "Автомойки" },
+  { icon: "🍽️", label: "Рестораны" },
+  { icon: "🏗️", label: "Склады" },
+];
+
+const stats = [
+  { value: "500+", label: "клиентов" },
+  { value: "1000+", label: "позиций" },
+  { value: "24ч", label: "доставка" },
+];
+
 export default function Featured() {
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
+    <div className="min-h-screen bg-slate-950 flex flex-col lg:flex-row">
+      <div className="flex-1 relative overflow-hidden">
         <img
           src="https://cdn.poehali.dev/projects/7d97264b-f1da-48ff-b7f9-164137aa9cc6/files/12869988-d193-485b-89a6-988ef038a2db.jpg"
           alt="Чистый офис — результат профессиональной химии"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover lg:min-h-screen"
+          style={{ minHeight: "400px" }}
         />
-      </div>
-      <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Для любого объекта и задачи</h3>
-        <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          От частного дома до промышленного склада — профессиональная химия, которая справляется с любым загрязнением. Безопасно, эффективно, выгодно.
-        </p>
-        <div className="flex flex-wrap gap-3 mb-8">
-          {["Дом и офис", "Рестораны", "Автомойки", "Производства", "Склады", "Бизнес-центры"].map((item) => (
-            <span key={item} className="border border-neutral-300 px-3 py-1 text-sm text-neutral-700 uppercase tracking-wide">
-              {item}
-            </span>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-slate-950/60" />
+        <div className="absolute bottom-8 left-8 flex gap-6">
+          {stats.map((s) => (
+            <div key={s.label} className="text-white">
+              <div className="text-2xl font-black text-cyan-400">{s.value}</div>
+              <div className="text-xs uppercase tracking-widest text-white/50">{s.label}</div>
+            </div>
           ))}
         </div>
-        <button className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
+      </div>
+
+      <div className="flex-1 flex flex-col justify-center px-10 py-16 lg:py-0 lg:px-16 bg-slate-950">
+        <p className="uppercase text-cyan-400 text-xs tracking-[0.4em] mb-6 font-medium">
+          Для любого объекта
+        </p>
+        <h2 className="text-3xl lg:text-5xl font-black text-white leading-tight mb-6">
+          От частного дома<br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">
+            до промышленного
+          </span><br />
+          масштаба
+        </h2>
+        <p className="text-white/50 text-sm leading-relaxed mb-10 max-w-sm">
+          Профессиональная химия, которая справляется с любым загрязнением. Концентрированные формулы, сертифицированные компоненты, проверенная эффективность.
+        </p>
+
+        <div className="grid grid-cols-3 gap-3 mb-10">
+          {segments.map((s) => (
+            <div
+              key={s.label}
+              className="border border-white/10 hover:border-cyan-400/50 bg-white/5 hover:bg-cyan-400/10 px-3 py-3 text-center transition-all duration-300 cursor-default"
+            >
+              <div className="text-xl mb-1">{s.icon}</div>
+              <div className="text-white text-xs uppercase tracking-widest">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 uppercase tracking-widest text-xs font-bold transition-colors duration-300 cursor-pointer w-fit">
           Смотреть каталог
         </button>
       </div>
