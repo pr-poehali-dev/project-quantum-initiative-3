@@ -1,16 +1,14 @@
 const segments = [
-  { icon: "🏠", label: "Дом" },
-  { icon: "🏢", label: "Офис" },
-  { icon: "🏭", label: "Производство" },
-  { icon: "🚗", label: "Автомойки" },
-  { icon: "🍽️", label: "Рестораны" },
-  { icon: "🏗️", label: "Склады" },
+  { icon: "🧴", label: "Жидкое мыло" },
+  { icon: "🍽️", label: "Для посуды" },
+  { icon: "👕", label: "Гель для стирки" },
+  { icon: "✨", label: "Чистящие средства" },
 ];
 
 const stats = [
-  { value: "500+", label: "клиентов" },
-  { value: "1000+", label: "позиций" },
-  { value: "24ч", label: "доставка" },
+  { value: "РФ", label: "производство" },
+  { value: "0%", label: "переплат" },
+  { value: "🍀", label: "Хакаскосметика" },
 ];
 
 export default function Featured() {
@@ -36,33 +34,35 @@ export default function Featured() {
 
       <div className="flex-1 flex flex-col justify-center px-10 py-16 lg:py-0 lg:px-16 bg-slate-950">
         <p className="uppercase text-cyan-400 text-xs tracking-[0.4em] mb-6 font-medium">
-          Для любого объекта
+          Богатый ассортимент
         </p>
         <h2 className="text-3xl lg:text-5xl font-black text-white leading-tight mb-6">
-          От частного дома<br />
+          Всё для чистоты —<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">
-            до промышленного
-          </span><br />
-          масштаба
+            по честной цене
+          </span>
         </h2>
         <p className="text-white/50 text-sm leading-relaxed mb-10 max-w-sm">
-          Профессиональная химия, которая справляется с любым загрязнением. Концентрированные формулы, сертифицированные компоненты, проверенная эффективность.
+          Многие бренды ушли с рынка — мы пришли им на замену. Такое же высокое качество, без накрутки за логистику и переплаты за бренд. Мы предлагаем то, что купили уже сами.
         </p>
 
-        <div className="grid grid-cols-3 gap-3 mb-10">
+        <div className="grid grid-cols-2 gap-3 mb-10">
           {segments.map((s) => (
             <div
               key={s.label}
-              className="border border-white/10 hover:border-cyan-400/50 bg-white/5 hover:bg-cyan-400/10 px-3 py-3 text-center transition-all duration-300 cursor-default"
+              className="border border-white/10 hover:border-cyan-400/50 bg-white/5 hover:bg-cyan-400/10 px-4 py-4 flex items-center gap-3 transition-all duration-300"
             >
-              <div className="text-xl mb-1">{s.icon}</div>
-              <div className="text-white text-xs uppercase tracking-widest">{s.label}</div>
+              <span className="text-2xl">{s.icon}</span>
+              <span className="text-white text-sm font-medium">{s.label}</span>
             </div>
           ))}
         </div>
 
+        <p className="text-white/30 text-xs mb-6 uppercase tracking-widest">
+          Ищите в магазинах «Хакаскосметика»
+        </p>
         <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 uppercase tracking-widest text-xs font-bold transition-colors duration-300 cursor-pointer w-fit">
-          Смотреть каталог
+          Найти магазин
         </button>
       </div>
     </div>

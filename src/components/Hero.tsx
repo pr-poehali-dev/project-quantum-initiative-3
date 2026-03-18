@@ -28,23 +28,23 @@ export default function Hero() {
 
       <motion.div style={{ opacity }} className="relative z-10 text-center text-white px-6 max-w-4xl">
         <p className="text-xs md:text-sm uppercase tracking-[0.5em] mb-6 text-cyan-400 font-medium">
-          Профессиональная химия
+          Российское производство
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 leading-none">
-          ЧИСТО<br />
+          INPURE<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">
-            ВЕЗДЕ
+            ПРОГРЕСС
           </span>
         </h1>
         <p className="text-base md:text-lg max-w-xl mx-auto text-white/70 leading-relaxed mb-10">
-          Бытовая химия для дома, офиса, производства, ресторанов, автомоек и любых других объектов
+          Наводи лоск в доме легко и без ущерба для бюджета — без накрутки за логистику и переплаты за бренд
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-3 uppercase tracking-widest text-xs font-bold transition-colors duration-300 cursor-pointer">
-            Получить предложение
+            Найти в магазине
           </button>
           <button className="border border-white/30 hover:border-white text-white px-8 py-3 uppercase tracking-widest text-xs font-bold transition-colors duration-300 cursor-pointer">
-            Каталог
+            Наш ассортимент
           </button>
         </div>
       </motion.div>
