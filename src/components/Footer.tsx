@@ -11,20 +11,22 @@ export default function Footer() {
             <div className="flex justify-between items-start flex-wrap gap-8">
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-2 uppercase text-cyan-400/60 text-xs tracking-widest">Продукция</h3>
-                <a href="#catalog" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Каталог</a>
-                <a href="#segments" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Сегменты</a>
-                <a href="#about" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">О компании</a>
+                <span className="text-white/60 text-sm">Жидкое мыло</span>
+                <span className="text-white/60 text-sm">Средство для посуды</span>
+                <span className="text-white/60 text-sm">Гель для стирки</span>
+                <span className="text-white/60 text-sm">Чистящие средства</span>
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-2 uppercase text-cyan-400/60 text-xs tracking-widest">Клиентам</h3>
+                <h3 className="mb-2 uppercase text-cyan-400/60 text-xs tracking-widest">Партнёрам</h3>
+                <a href="#partner" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Партнёрская программа</a>
                 <a href="#wholesale" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Оптовикам</a>
-                <a href="#delivery" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Доставка</a>
-                <a href="#contact" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Связаться</a>
+                <a href="#about" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">О бренде</a>
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-2 uppercase text-cyan-400/60 text-xs tracking-widest">Контакты</h3>
-                <span className="text-white/60 text-sm">info@inpure.ru</span>
-                <span className="text-white/60 text-sm">+7 (800) 000-00-00</span>
+                <h3 className="mb-2 uppercase text-cyan-400/60 text-xs tracking-widest">Производство</h3>
+                <span className="text-white/60 text-sm">Волгоградская область</span>
+                <span className="text-white/60 text-sm">Сделано в России</span>
+                <a href="#contact" className="text-white/60 hover:text-cyan-400 transition-colors duration-300 text-sm">Связаться</a>
               </div>
             </div>
 

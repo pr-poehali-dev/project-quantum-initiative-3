@@ -2,10 +2,10 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
 const features = [
-  { title: "Концентрат", desc: "Экономичный расход — до 1:200" },
-  { title: "Сертификат", desc: "Соответствие ГОСТ и СанПиН" },
-  { title: "Безопасность", desc: "Гипоаллергенные формулы" },
-  { title: "Доставка", desc: "По всей России за 24 часа" },
+  { title: "Производство", desc: "Волгоградская область, сделано в России" },
+  { title: "Контроль", desc: "Эффективный моющий состав и проверенная технология" },
+  { title: "Честная цена", desc: "Без накрутки за логистику и посредников" },
+  { title: "Партнёрство", desc: "Выгодная партнёрская программа для бизнеса" },
 ];
 
 export default function Promo() {
@@ -34,11 +34,11 @@ export default function Promo() {
       </div>
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6">
-        <p className="text-cyan-400 uppercase text-xs tracking-[0.5em] mb-4 text-center">Почему inpure Прогресс</p>
+        <p className="text-cyan-400 uppercase text-xs tracking-[0.5em] mb-4 text-center">Почему INPURE</p>
         <h2 className="text-4xl md:text-6xl font-black text-white text-center mb-16 leading-tight">
-          Сила профессиональной<br />
+          Производим сами —<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">
-            формулы
+            предлагаем выгодно
           </span>
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10">

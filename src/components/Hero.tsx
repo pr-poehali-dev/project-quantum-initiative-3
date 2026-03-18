@@ -37,14 +37,14 @@ export default function Hero() {
           </span>
         </h1>
         <p className="text-base md:text-lg max-w-xl mx-auto text-white/70 leading-relaxed mb-10">
-          Наводи лоск в доме легко и без ущерба для бюджета — без накрутки за логистику и переплаты за бренд
+          Производство Волгоградской области — наводи лоск в доме легко и без ущерба для бюджета, без накрутки за логистику
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-3 uppercase tracking-widest text-xs font-bold transition-colors duration-300 cursor-pointer">
             Найти в магазине
           </button>
           <button className="border border-white/30 hover:border-white text-white px-8 py-3 uppercase tracking-widest text-xs font-bold transition-colors duration-300 cursor-pointer">
-            Наш ассортимент
+            Стать партнёром
           </button>
         </div>
       </motion.div>
